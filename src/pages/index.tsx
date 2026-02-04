@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Spline from "@splinetool/react-spline";
 
 export default function Home() {
   return (
@@ -22,9 +21,6 @@ export default function Home() {
           <span className="text-6xl tracking-tighter 2xl:text-8xl text-white">
             Work in progress
           </span>
-          <div>
-                          <Spline scene="/assets/scene.splinecode" />
-          </div>
         </div>
       </main>
     </>
