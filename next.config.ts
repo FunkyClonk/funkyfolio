@@ -5,6 +5,7 @@
 import "./src/env.js";
 
 const isProd = process.env.prod === 'true';
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -14,7 +15,6 @@ const nextConfig = {
   basePath: isProd ? '/funkyfolio/' : '',
   output: 'export',
 };
-module.exports = nextConfig;
 
 export default nextConfig;
 
