@@ -12,3 +12,6 @@
     "Segoe UI Symbol",
     "Noto Color Emoji";
 }
+html {
+  scroll-behavior: smooth;
+}
