@@ -1,3 +1,4 @@
+import profileImg from '../assets/funkyclonk.jpg'
 export default function Hello() {
   return (
   <div

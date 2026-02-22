@@ -4,16 +4,19 @@
  */
 import "./src/env.js";
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.prod === 'true';
 const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true, // Disable default image optimization
   },
   assetPrefix: isProd ? '/funkyfolio/' : '',
-  basePath: isProd ? '/funkyfolio' : '',
-  output: 'export'
+  basePath: isProd ? '/funkyfolio/' : '',
+  output: 'export',
 };
+module.exports = nextConfig;
 
 export default nextConfig;
+
+
 
