@@ -1,11 +1,12 @@
 /**
- * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
- * for Docker builds.
+ * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation.
+ * This is especially useful for Docker builds.
  */
-import "./src/env.js";
+require("./src/env.js");
 
 const isProd = process.env.prod === 'true';
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -16,7 +17,4 @@ const nextConfig = {
   output: 'export',
 };
 
-export default nextConfig;
-
-
-
+module.exports = nextConfig;
