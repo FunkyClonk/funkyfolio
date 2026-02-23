@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/assets/image.png" />
       </Head>
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#13762d] to-[#15162c]">
+      <main className="pt-[80px] flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#13762d] to-[#15162c]">
         <Hello />
         <About />
         <Project />

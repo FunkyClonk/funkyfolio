@@ -1,9 +1,9 @@
 import Image from 'next/image';
 export default function Header() {
   return (
-    <header className="border-b border-green-500 tracking-wide relative z-50">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/20 border-b border-white/20">
 
-      <div className="flex flex-wrap items-center gap-4 px-10 py-3 relative bg-green-500 min-h-[65px]">
+      <div className="flex flex-wrap items-center gap-4 px-10 py-3 relative min-h-[65px]">
         <a href='#about' className="hidden max-lg:block"><Image src="/assets/funkytitle.png"
           alt="logo" width={144} height={144} className="w-36" /></a>
 
