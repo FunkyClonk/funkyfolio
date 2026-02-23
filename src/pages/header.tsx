@@ -1,10 +1,11 @@
+import Image from 'next/image';
 export default function Header() {
   return (
     <header className="border-b border-green-500 tracking-wide relative z-50">
 
       <div className="flex flex-wrap items-center gap-4 px-10 py-3 relative bg-green-500 min-h-[65px]">
-        <a href='javascript:void(0)' className="hidden max-lg:block"><img src="/assets/funkytitle.png"
-          alt="logo" className="w-36" /></a>
+        <a href='#about' className="hidden max-lg:block"><Image src="/assets/funkytitle.png"
+          alt="logo" width={144} height={144} className="w-36" /></a>
 
         <div id="collapseMenu"
           className="w-full max-lg:hidden lg:!block max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">

@@ -1,4 +1,4 @@
-import profileImg from '../assets/funkyclonk.jpg'
+import Image from "next/image";
 export default function Hello() {
   return (
   <div
@@ -15,8 +15,10 @@ export default function Hello() {
     </div>
 
     <div className="w-48 h-48 md:w-64 md:h-64">
-      <img
+      <Image
         src="/assets/funkyclonk.jpg"
+        width={256}
+        height={256}
         alt="Profile"
         className="w-full h-full object-cover rounded-full border-4 border-green-300"
       />
